@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		011EB2C9B3D9E12AA3EF4894 /* Pods_verses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_verses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D50B5832498EC20006F4937 /* 말씀배송.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "말씀배송.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D50B5832498EC20006F4937 /* verses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = verses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D50B5862498EC20006F4937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D50B5882498EC20006F4937 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4D50B58A2498EC20006F4937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		4D50B5842498EC20006F4937 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D50B5832498EC20006F4937 /* 말씀배송.app */,
+				4D50B5832498EC20006F4937 /* verses.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			);
 			name = verses;
 			productName = verses;
-			productReference = 4D50B5832498EC20006F4937 /* 말씀배송.app */;
+			productReference = 4D50B5832498EC20006F4937 /* verses.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -384,12 +384,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XH796T6N5H;
 				INFOPLIST_FILE = verses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.jinhyang.verses;
-				PRODUCT_NAME = "말씀배송";
+				PRODUCT_NAME = verses;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,12 +404,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XH796T6N5H;
 				INFOPLIST_FILE = verses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.jinhyang.verses;
-				PRODUCT_NAME = "말씀배송";
+				PRODUCT_NAME = verses;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="tvNBold.otf">
+            <string>OTEnjoystoriesB</string>
+        </array>
+        <array key="tvNMedium.otf">
+            <string>OTEnjoystoriesM</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="verses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Gmz-aR-BIU">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 말씀 한 구절" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z4-Lc-VDU">
+                                <rect key="frame" x="32.333333333333343" y="99" width="310.33333333333326" height="52.666666666666657"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesB" family="tvN EnjoystoriesOTF" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNF-R6-IyC">
+                                <rect key="frame" x="177.33333333333334" y="359" width="20.666666666666657" height="43.333333333333314"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesM" family="tvN EnjoystoriesOTF" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqr-OC-vdX">
+                                <rect key="frame" x="177.66666666666666" y="308.33333333333331" width="20" height="43.333333333333314"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesM" family="tvN EnjoystoriesOTF" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbD-qz-85z">
+                                <rect key="frame" x="182.66666666666666" y="255.00000000000003" width="10" height="43.333333333333343"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesM" family="tvN EnjoystoriesOTF" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjv-fB-J8f">
+                                <rect key="frame" x="182.66666666666666" y="201.66666666666666" width="10" height="43.333333333333343"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesM" family="tvN EnjoystoriesOTF" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zj-nu-q53">
+                                <rect key="frame" x="177.33333333333334" y="465.66666666666669" width="20.666666666666657" height="43.333333333333314"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesM" family="tvN EnjoystoriesOTF" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7N-Bz-6Yy">
+                                <rect key="frame" x="177.33333333333334" y="519" width="20.666666666666657" height="43.333333333333371"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesM" family="tvN EnjoystoriesOTF" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvS-uA-OZp">
+                                <rect key="frame" x="179" y="612.33333333333337" width="17" height="35"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesM" family="tvN EnjoystoriesOTF" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P41-Aa-Hkf">
+                                <rect key="frame" x="177.33333333333334" y="412.33333333333331" width="20.666666666666657" height="43.333333333333314"/>
+                                <fontDescription key="fontDescription" name="OTEnjoystoriesM" family="tvN EnjoystoriesOTF" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PvS-uA-OZp" firstAttribute="centerX" secondItem="G7N-Bz-6Yy" secondAttribute="centerX" id="1tb-55-qwb"/>
+                            <constraint firstItem="1Zj-nu-q53" firstAttribute="top" secondItem="P41-Aa-Hkf" secondAttribute="bottom" constant="10" id="2k4-y4-ZYJ"/>
+                            <constraint firstItem="8Z4-Lc-VDU" firstAttribute="centerX" secondItem="Gmz-aR-BIU" secondAttribute="centerX" id="58S-kx-Jpv"/>
+                            <constraint firstItem="cNF-R6-IyC" firstAttribute="top" secondItem="eqr-OC-vdX" secondAttribute="bottom" constant="7.3333333333333144" id="5ud-YG-wIw"/>
+                            <constraint firstItem="cNF-R6-IyC" firstAttribute="centerX" secondItem="eqr-OC-vdX" secondAttribute="centerX" id="7zR-BE-3ss"/>
+                            <constraint firstItem="P41-Aa-Hkf" firstAttribute="top" secondItem="cNF-R6-IyC" secondAttribute="bottom" constant="10" id="EBA-wP-CYk"/>
+                            <constraint firstItem="nbD-qz-85z" firstAttribute="top" secondItem="Tjv-fB-J8f" secondAttribute="bottom" constant="10" id="EC3-WZ-Gyn"/>
+                            <constraint firstItem="eqr-OC-vdX" firstAttribute="centerX" secondItem="nbD-qz-85z" secondAttribute="centerX" id="KRU-0M-YpC"/>
+                            <constraint firstItem="eqr-OC-vdX" firstAttribute="top" secondItem="nbD-qz-85z" secondAttribute="bottom" constant="10" id="NSO-rw-H2F"/>
+                            <constraint firstItem="8Z4-Lc-VDU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="NbK-NH-IfE"/>
+                            <constraint firstItem="1Zj-nu-q53" firstAttribute="centerX" secondItem="P41-Aa-Hkf" secondAttribute="centerX" id="Pa7-n5-sG0"/>
+                            <constraint firstItem="nbD-qz-85z" firstAttribute="centerX" secondItem="Tjv-fB-J8f" secondAttribute="centerX" id="R3P-NK-uBa"/>
+                            <constraint firstItem="G7N-Bz-6Yy" firstAttribute="top" secondItem="1Zj-nu-q53" secondAttribute="bottom" constant="10" id="S68-a7-5oz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gmz-aR-BIU" secondAttribute="bottom" id="b3y-tG-UYM"/>
+                            <constraint firstItem="Gmz-aR-BIU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dd3-dt-Lhd"/>
+                            <constraint firstItem="Tjv-fB-J8f" firstAttribute="top" secondItem="8Z4-Lc-VDU" secondAttribute="bottom" constant="50" id="esO-2N-f7W"/>
+                            <constraint firstItem="PvS-uA-OZp" firstAttribute="top" secondItem="G7N-Bz-6Yy" secondAttribute="bottom" constant="50" id="ffy-Ie-bzT"/>
+                            <constraint firstItem="Tjv-fB-J8f" firstAttribute="centerX" secondItem="8Z4-Lc-VDU" secondAttribute="centerX" id="j9x-x1-rgt"/>
+                            <constraint firstItem="Gmz-aR-BIU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sB0-17-fbK"/>
+                            <constraint firstItem="P41-Aa-Hkf" firstAttribute="centerX" secondItem="cNF-R6-IyC" secondAttribute="centerX" id="tJ7-rQ-HHI"/>
+                            <constraint firstItem="Gmz-aR-BIU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u9x-ps-cAa"/>
+                            <constraint firstItem="G7N-Bz-6Yy" firstAttribute="centerX" secondItem="1Zj-nu-q53" secondAttribute="centerX" id="zox-bv-x49"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="location" destination="PvS-uA-OZp" id="Cbw-TD-GoQ"/>
+                        <outlet property="verse1" destination="Tjv-fB-J8f" id="Xqx-cl-tNc"/>
+                        <outlet property="verse2" destination="nbD-qz-85z" id="Eh8-gC-L7g"/>
+                        <outlet property="verse3" destination="eqr-OC-vdX" id="3xd-6z-l7K"/>
+                        <outlet property="verse4" destination="cNF-R6-IyC" id="wym-3o-qSG"/>
+                        <outlet property="verse5" destination="P41-Aa-Hkf" id="Jub-1g-bja"/>
+                        <outlet property="verse6" destination="1Zj-nu-q53" id="aDU-hn-fgC"/>
+                        <outlet property="verse7" destination="G7N-Bz-6Yy" id="GK3-su-Kih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.35869565217392"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="532" height="398.66665649414062"/>
+    </resources>
+</document>

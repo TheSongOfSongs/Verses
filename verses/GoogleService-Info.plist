@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>713830995560-mifiofoojplvlgf9qh8skvtvd9lf0j05.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.713830995560-mifiofoojplvlgf9qh8skvtvd9lf0j05</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBQz1Pm-XFu4lpUbtw21elFLY-R63CJfrE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>713830995560</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>net.jinhyang.verses</string>
+	<key>PROJECT_ID</key>
+	<string>verses-479f2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>verses-479f2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:713830995560:ios:f00ec3b721815e94fd0ddd</string>
+	<key>DATABASE_URL</key>
+	<string>https://verses-479f2.firebaseio.com</string>
+</dict>
+</plist>

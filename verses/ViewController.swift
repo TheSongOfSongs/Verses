@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     let db = Database.database().reference()
     var verses: Verse?
-    lazy var screenshot: UIImage? = UIImage()
+    var screenshot: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +35,20 @@ class ViewController: UIViewController {
         getImage()
         saveImage()
     }
-}
-
-// MARK: - take screenshot and save to album
-extension ViewController {
     
+    @IBAction func shareScreenshot(_ sender: UIBarButtonItem) {
+        if screenshot == nil {
+            getImage()
+        }
+        
+        guard let image = screenshot else { return }
+        
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    // MARK: - take screenshot and save to album
     func getImage() {
         self.toolbar.isHidden = true
 
@@ -53,31 +62,30 @@ extension ViewController {
     
     func saveImage() {
         PHPhotoLibrary.requestAuthorization { status in
-            guard status == .authorized, let image = self.screenshot else { return }
+            guard status == .authorized else { return self.alert(title: "", message: "") }
+            guard let image = self.screenshot else { return }
             PHPhotoLibrary.shared().performChanges({
                 PHAssetChangeRequest.creationRequestForAsset(from: image)
             }, completionHandler: { (bool, error) in
                 if bool == true {
-                    self.alert()
+                    self.alert(title: "저장 성공", message: "사진에서 확인해보세요!")
                 }
             })
         }
         
     }
     
-    func alert() {
+    func alert(title: String, message: String) {
         DispatchQueue.main.async {
-            let alert = UIAlertController(title: "저장 성공", message: "사진 폴더에서 확인해보세요!", preferredStyle: .alert)
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let ok = UIAlertAction(title: "확인", style: .default, handler: nil)
             alert.addAction(ok)
             self.present(alert, animated: true, completion: nil)
         }
     }
-}
-
-
-// MARK: - get today's verses from the database
-extension ViewController {
+    
+    
+    // MARK: - get today's verses from the database
     func fetchVerse() {
         
         db.child("verseCount").observeSingleEvent(of: .value) { (snapshot) in
@@ -163,4 +171,5 @@ extension ViewController {
         label.font = UIFont(name: label.font.fontName, size: 30)
         label.text = location
     }
+    
 }

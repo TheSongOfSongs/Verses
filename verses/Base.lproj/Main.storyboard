@@ -18,13 +18,14 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="말씀배송" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="verses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Gmz-aR-BIU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 말씀 한 구절" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z4-Lc-VDU">
                                 <rect key="frame" x="85.333333333333329" y="99" width="204.33333333333337" height="49.666666666666657"/>
@@ -84,7 +85,11 @@
                                 <rect key="frame" x="0.0" y="729" width="375" height="49"/>
                                 <items>
                                     <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="ryj-xv-zzC"/>
-                                    <barButtonItem image="alarm" catalog="system" id="tfC-nB-Jrb"/>
+                                    <barButtonItem image="alarm" catalog="system" id="tfC-nB-Jrb">
+                                        <connections>
+                                            <action selector="showAlarmView:" destination="BYZ-38-t0r" id="ZIm-TR-Rvk"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ARi-BQ-2Qe"/>
                                     <barButtonItem image="camera" catalog="system" id="NSy-S8-WRv">
                                         <connections>
@@ -102,8 +107,15 @@
                                 <color key="tintColor" red="0.96508771179999997" green="0.43538618089999997" blue="0.3925687075" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.96443659069999998" green="0.94548910860000002" blue="0.91372901200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </toolbar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaC-Cp-hdT">
+                                <rect key="frame" x="0.0" y="529" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="GED-TF-eOP"/>
+                                </constraints>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="PvS-uA-OZp" firstAttribute="centerX" secondItem="G7N-Bz-6Yy" secondAttribute="centerX" id="1tb-55-qwb"/>
                             <constraint firstItem="1Zj-nu-q53" firstAttribute="top" secondItem="P41-Aa-Hkf" secondAttribute="bottom" constant="10" id="2k4-y4-ZYJ"/>
@@ -112,6 +124,7 @@
                             <constraint firstItem="cNF-R6-IyC" firstAttribute="top" secondItem="eqr-OC-vdX" secondAttribute="bottom" constant="7.3333333333333144" id="5ud-YG-wIw"/>
                             <constraint firstItem="cNF-R6-IyC" firstAttribute="centerX" secondItem="eqr-OC-vdX" secondAttribute="centerX" id="7zR-BE-3ss"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nYn-Pf-cy5" secondAttribute="trailing" id="CfP-xa-E0u"/>
+                            <constraint firstItem="nYn-Pf-cy5" firstAttribute="top" secondItem="JaC-Cp-hdT" secondAttribute="bottom" id="DVp-PW-qgf"/>
                             <constraint firstItem="P41-Aa-Hkf" firstAttribute="top" secondItem="cNF-R6-IyC" secondAttribute="bottom" constant="10" id="EBA-wP-CYk"/>
                             <constraint firstItem="nbD-qz-85z" firstAttribute="top" secondItem="Tjv-fB-J8f" secondAttribute="bottom" constant="10" id="EC3-WZ-Gyn"/>
                             <constraint firstItem="eqr-OC-vdX" firstAttribute="centerX" secondItem="nbD-qz-85z" secondAttribute="centerX" id="KRU-0M-YpC"/>
@@ -120,8 +133,10 @@
                             <constraint firstItem="1Zj-nu-q53" firstAttribute="centerX" secondItem="P41-Aa-Hkf" secondAttribute="centerX" id="Pa7-n5-sG0"/>
                             <constraint firstItem="nbD-qz-85z" firstAttribute="centerX" secondItem="Tjv-fB-J8f" secondAttribute="centerX" id="R3P-NK-uBa"/>
                             <constraint firstItem="G7N-Bz-6Yy" firstAttribute="top" secondItem="1Zj-nu-q53" secondAttribute="bottom" constant="10" id="S68-a7-5oz"/>
+                            <constraint firstItem="JaC-Cp-hdT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Swl-76-dqd"/>
                             <constraint firstItem="nYn-Pf-cy5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZzI-xJ-LFN"/>
                             <constraint firstAttribute="bottom" secondItem="Gmz-aR-BIU" secondAttribute="bottom" id="b3y-tG-UYM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JaC-Cp-hdT" secondAttribute="trailing" id="cOv-Cw-n3F"/>
                             <constraint firstItem="PvS-uA-OZp" firstAttribute="top" secondItem="G7N-Bz-6Yy" secondAttribute="bottom" constant="50" id="ffy-Ie-bzT"/>
                             <constraint firstItem="Tjv-fB-J8f" firstAttribute="centerX" secondItem="8Z4-Lc-VDU" secondAttribute="centerX" id="j9x-x1-rgt"/>
                             <constraint firstItem="Gmz-aR-BIU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nSZ-RX-S8c"/>
@@ -132,8 +147,12 @@
                             <constraint firstItem="G7N-Bz-6Yy" firstAttribute="centerX" secondItem="1Zj-nu-q53" secondAttribute="centerX" id="zox-bv-x49"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qLV-6d-ycS" appends="YES" id="qsb-yR-K9Q"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="JaC-Cp-hdT" id="w3R-X2-DN9"/>
                         <outlet property="location" destination="PvS-uA-OZp" id="Cbw-TD-GoQ"/>
                         <outlet property="toolbar" destination="nYn-Pf-cy5" id="YuP-lz-Bq1"/>
                         <outlet property="verse1" destination="Tjv-fB-J8f" id="Xqx-cl-tNc"/>
@@ -146,8 +165,62 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qLV-6d-ycS">
+                    <connections>
+                        <action selector="toggleToolBar:" destination="BYZ-38-t0r" id="Kef-CK-4dd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="126.35467980295567"/>
+        </scene>
+        <!--Mini Alarm View Controller-->
+        <scene sceneID="Eme-Qg-pFp">
+            <objects>
+                <viewController storyboardIdentifier="Alarm" id="wzE-3Z-KGb" customClass="MiniAlarmViewController" customModule="verses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9NS-sq-Wvb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="puu-Ya-ITf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="erQ-d4-RSe">
+                                <rect key="frame" x="0.0" y="0.0" width="302" height="200"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ8-Bk-xjy">
+                                <rect key="frame" x="315" y="0.0" width="40" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="R8W-0F-NzW"/>
+                                </constraints>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" red="0.95867758989999996" green="0.43752425909999998" blue="0.25483945009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="setTime:" destination="wzE-3Z-KGb" eventType="touchUpInside" id="lpd-xp-Syc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="puu-Ya-ITf" firstAttribute="leading" secondItem="ei7-6d-3NH" secondAttribute="leading" id="1EK-pM-NAe"/>
+                            <constraint firstItem="MZ8-Bk-xjy" firstAttribute="bottom" secondItem="puu-Ya-ITf" secondAttribute="bottom" id="2CV-Pi-xeV"/>
+                            <constraint firstItem="erQ-d4-RSe" firstAttribute="leading" secondItem="puu-Ya-ITf" secondAttribute="leading" id="4gW-E7-9Up"/>
+                            <constraint firstItem="ei7-6d-3NH" firstAttribute="trailing" secondItem="puu-Ya-ITf" secondAttribute="trailing" id="FHf-ne-EnP"/>
+                            <constraint firstItem="MZ8-Bk-xjy" firstAttribute="top" secondItem="puu-Ya-ITf" secondAttribute="top" id="RMI-wi-g5B"/>
+                            <constraint firstItem="erQ-d4-RSe" firstAttribute="top" secondItem="puu-Ya-ITf" secondAttribute="top" id="bxz-ax-fz2"/>
+                            <constraint firstItem="ei7-6d-3NH" firstAttribute="trailing" secondItem="MZ8-Bk-xjy" secondAttribute="trailing" constant="20" id="evQ-n7-aFb"/>
+                            <constraint firstItem="erQ-d4-RSe" firstAttribute="bottom" secondItem="puu-Ya-ITf" secondAttribute="bottom" id="i2q-4n-q0O"/>
+                            <constraint firstItem="MZ8-Bk-xjy" firstAttribute="leading" secondItem="erQ-d4-RSe" secondAttribute="trailing" constant="13" id="iDb-fu-oMK"/>
+                            <constraint firstItem="puu-Ya-ITf" firstAttribute="top" secondItem="9NS-sq-Wvb" secondAttribute="top" id="lUg-Gt-6lQ"/>
+                            <constraint firstAttribute="bottom" secondItem="puu-Ya-ITf" secondAttribute="bottom" id="zl3-Vq-vEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ei7-6d-3NH"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1P6-jS-YKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="291.87192118226602"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0F94F224BEFF74000C86CC /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F94F124BEFF74000C86CC /* Extension+ViewController.swift */; };
 		4D50B5872498EC20006F4937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50B5862498EC20006F4937 /* AppDelegate.swift */; };
 		4D50B5892498EC20006F4937 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50B5882498EC20006F4937 /* SceneDelegate.swift */; };
 		4D50B58B2498EC20006F4937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50B58A2498EC20006F4937 /* ViewController.swift */; };
@@ -18,11 +19,13 @@
 		4D50B5A02498EE3A006F4937 /* tvNMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D50B59B2498EE2C006F4937 /* tvNMedium.otf */; };
 		4D74EACB24AA4143002A8D98 /* Verse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74EACA24AA4143002A8D98 /* Verse.swift */; };
 		4D74EACD24AA5D5B002A8D98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D74EACC24AA5D5B002A8D98 /* GoogleService-Info.plist */; };
+		4D74EAD324ADCD58002A8D98 /* MiniAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74EAD224ADCD58002A8D98 /* MiniAlarmViewController.swift */; };
 		D7FB80A02CBEB8D5093A4314 /* Pods_verses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011EB2C9B3D9E12AA3EF4894 /* Pods_verses.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		011EB2C9B3D9E12AA3EF4894 /* Pods_verses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_verses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0F94F124BEFF74000C86CC /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		4D50B5832498EC20006F4937 /* verses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = verses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D50B5862498EC20006F4937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D50B5882498EC20006F4937 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		4D50B59D2498EE2C006F4937 /* tvNLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tvNLight.otf; sourceTree = "<group>"; };
 		4D74EACA24AA4143002A8D98 /* Verse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verse.swift; sourceTree = "<group>"; };
 		4D74EACC24AA5D5B002A8D98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D74EAD224ADCD58002A8D98 /* MiniAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAlarmViewController.swift; sourceTree = "<group>"; };
 		5A712008CB84A60F1A601DA8 /* Pods-verses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-verses.release.xcconfig"; path = "Target Support Files/Pods-verses/Pods-verses.release.xcconfig"; sourceTree = "<group>"; };
 		C31950A0658232157AC37B2F /* Pods-verses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-verses.debug.xcconfig"; path = "Target Support Files/Pods-verses/Pods-verses.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,11 +77,11 @@
 		4D50B5852498EC20006F4937 /* verses */ = {
 			isa = PBXGroup;
 			children = (
+				4D74EAD124ADCB97002A8D98 /* Alarm */,
+				4D74EAD024ADCB89002A8D98 /* Main */,
 				4D50B59A2498EE11006F4937 /* Font */,
 				4D50B5862498EC20006F4937 /* AppDelegate.swift */,
 				4D50B5882498EC20006F4937 /* SceneDelegate.swift */,
-				4D50B58A2498EC20006F4937 /* ViewController.swift */,
-				4D74EACA24AA4143002A8D98 /* Verse.swift */,
 				4D50B58C2498EC20006F4937 /* Main.storyboard */,
 				4D50B58F2498EC23006F4937 /* Assets.xcassets */,
 				4D50B5912498EC23006F4937 /* LaunchScreen.storyboard */,
@@ -95,6 +99,24 @@
 				4D50B59B2498EE2C006F4937 /* tvNMedium.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		4D74EAD024ADCB89002A8D98 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4D74EACA24AA4143002A8D98 /* Verse.swift */,
+				4D50B58A2498EC20006F4937 /* ViewController.swift */,
+				4D0F94F124BEFF74000C86CC /* Extension+ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4D74EAD124ADCB97002A8D98 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				4D74EAD224ADCD58002A8D98 /* MiniAlarmViewController.swift */,
+			);
+			path = Alarm;
 			sourceTree = "<group>";
 		};
 		6DBD50012FBED427E023B050 /* Pods */ = {
@@ -237,6 +259,8 @@
 				4D50B5872498EC20006F4937 /* AppDelegate.swift in Sources */,
 				4D50B5892498EC20006F4937 /* SceneDelegate.swift in Sources */,
 				4D74EACB24AA4143002A8D98 /* Verse.swift in Sources */,
+				4D0F94F224BEFF74000C86CC /* Extension+ViewController.swift in Sources */,
+				4D74EAD324ADCD58002A8D98 /* MiniAlarmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

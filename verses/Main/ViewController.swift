@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var verse6: UILabel!
     @IBOutlet weak var verse7: UILabel!
     @IBOutlet weak var toolbar: UIToolbar!
+    @IBOutlet weak var containerView: UIView!
+    
     
     let db = Database.database().reference()
     var verses: Verse?
@@ -36,6 +38,13 @@ class ViewController: UIViewController {
         saveImage()
     }
     
+    @IBAction func showAlarmView(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let miniAlarmViewController = storyboard.instantiateViewController(identifier: "Alarm") as? MiniAlarmViewController else { return }
+        
+        self.add(miniAlarmViewController, containerView)
+    }
+    
     @IBAction func shareScreenshot(_ sender: UIBarButtonItem) {
         if screenshot == nil {
             getImage()
@@ -47,6 +56,13 @@ class ViewController: UIViewController {
         
         self.present(activityViewController, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func toggleToolBar(_ sender: UITapGestureRecognizer) {
+        self.toolbar.isHidden.toggle()
+    }
+    
+    
     
     // MARK: - take screenshot and save to album
     func getImage() {
